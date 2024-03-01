@@ -19,7 +19,6 @@
 import { openNotificationLogModal } from "@api/Notifications/notificationLog";
 import { Settings, useSettings } from "@api/Settings";
 import { classNameFactory } from "@api/Styles";
-import DonateButton from "@components/DonateButton";
 import { ErrorCard } from "@components/ErrorCard";
 import { Margins } from "@utils/margins";
 import { identity } from "@utils/misc";
@@ -31,8 +30,8 @@ import { SettingsTab, wrapTab } from "./shared";
 
 const cl = classNameFactory("vc-settings-");
 
-const DEFAULT_DONATE_IMAGE = "https://cdn.discordapp.com/emojis/1026533090627174460.png";
-const SHIGGY_DONATE_IMAGE = "https://media.discordapp.net/stickers/1039992459209490513.png";
+const DEFAULT_DONATE_IMAGE = "https://i.imgur.com/dTjXX9X.jpeg";
+const SHIGGY_DONATE_IMAGE = "https://i.imgur.com/dTjXX9X.jpeg";
 
 type KeysOfType<Object, Type> = {
     [K in keyof Object]: Object[K] extends Type ? K : never;
@@ -317,9 +316,8 @@ function DonateCard({ image }: DonateCardProps) {
     return (
         <Card className={cl("card", "donate")}>
             <div>
-                <Forms.FormTitle tag="h5">Support the Project</Forms.FormTitle>
-                <Forms.FormText>Please consider supporting the development of Vencord by donating!</Forms.FormText>
-                <DonateButton style={{ transform: "translateX(-1em)" }} />
+                <Forms.FormTitle tag="h5">Don't Support the Project</Forms.FormTitle>
+                <Forms.FormText>Please, don't donate your money to lol1con-loving weebs, and enjoy their open source GPL-3-licensed software.</Forms.FormText>
             </div>
             <img
                 role="presentation"

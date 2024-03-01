@@ -16,8 +16,16 @@ This is a fork of Vencord that has been cleaned from the l0l1con characters pres
 -   Maintained very actively, broken plugins are usually fixed within 12 hours
 -   Settings sync: Keep your plugins and their settings synchronised between devices / apps (optional)
 
-## Installing / Uninstalling
-Build it yourself and run it.
+## Installing
+
+- Install PNPM https://pnpm.io/installation
+- Run `pnpm install --frozen-lockfile`
+- Run `pnpm build`
+- Run `pnpm inject`
+
+## Uninstalling
+
+- Run `pnpm uninject`
 
 ## Disclaimer
 
